@@ -57,3 +57,7 @@ export function Grid_Btn(reference_for_scroll:Ref<'1 / 2' | '1 / 3' |'2 / 3'>,re
     }, 200)
   }
 
+  export function Hide_Presentation_and_continue(a:Ref<"Continuer" | "Chargement...">) {
+    a.value = "Chargement..."
+  }
+
