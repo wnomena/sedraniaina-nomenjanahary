@@ -26,7 +26,7 @@ import { onMounted, ref } from 'vue';
     all_static_Data.loading()
     setTimeout(() => {
       reactive_data.value.bool = true
-    },3000)
+    },500)
   onMounted(() => {
     window.addEventListener("load",() => {
       reactive_data.value.loading = false
