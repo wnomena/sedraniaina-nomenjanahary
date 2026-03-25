@@ -13,6 +13,8 @@
   "dependencies": {
     "aos": "^2.3.4",
     "serve": "^14.2.6",
+    "vite-plugin-prerender": "^1.0.8",
+    "vite-plugin-ssr": "^0.4.142",
     "vue": "^3.5.28"
   },
   "devDependencies": {

@@ -11,7 +11,7 @@ import specialOffreForEveryone from './components/other-component/special-offre-
 import presentationComponent from './components/other-component/presentation-component.vue';
 import presentationOfEnterpriseAndLoadingPage from './components/Small-Component/presentation-of-enterprise-and-loading-page.vue';
 import { All_static_Data, Props_For_Scroll } from './class';
-import { onMounted, onUnmounted, ref } from 'vue';
+import { onMounted, ref } from 'vue';
   const reactive_data = ref({
     bool : false,
     reference : false,
@@ -36,7 +36,7 @@ import { onMounted, onUnmounted, ref } from 'vue';
 
 <template>
   <section v-if="reactive_data.bool" class="container-for-all-element">
-    <presentation-of-enterprise-and-loading-page v-if="reactive_data.blur_efect_by_user" v-model="reactive_data.blur_efect_by_user" />
+    <presentation-of-enterprise-and-loading-page v-if="reactive_data.blur_efect_by_user || reactive_data.loading" v-model="reactive_data.blur_efect_by_user" />
     <display-ai-temporarly-not-available v-if="reactive_data.reference" v-model="reactive_data.reference"/>
     <section :style="{'filter' : `blur(${(reactive_data.reference || reactive_data.loading || reactive_data.blur_efect_by_user) ? '20px' : '0px'})`}" class="for-blur-all-element-except-one col-12">
       <header-component v-model="reactive_data.reference" :list_of_automation="all_static_Data.all_service_and_image_loaded_for_automation.value" :list_of_dev="all_static_Data.all_service_and_image_loaded_for_dev_solution.value" :reference="reactive_data.reference" />
