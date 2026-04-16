@@ -1,42 +1,60 @@
-# vue-project
+# Lambda Coder - Portfolio Agence
 
-This template should help get you started developing with Vue 3 in Vite.
+## 📋 Présentation
 
-## Recommended IDE Setup
+Portfolio professionnel conçu avec une orientation agence, mettant en avant les services d'une entreprise de développement. Cette plateforme présente les capacités de l'agence, les projets réalisés et facilite le contact avec les clients potentiels.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🎯 Objectif
 
-## Recommended Browser Setup
+Créer une présentation d'agence crédible et attractive, showcasing les compétences techniques et les réalisations passées pour attirer de nouveaux clients.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 🛠️ Stack Technique
 
-## Type Support for `.vue` Imports in TS
+- **Framework** : Vue.js 3.5.28
+- **Langage** : TypeScript 5.9.3
+- **Build Tool** : Vite 7.3.1
+- **Animations** : AOS (Animate On Scroll) 2.3.4
+- **Serveur Production** : serve 14.2.6
+- **SSR & Prerendering** : vite-plugin-ssr 0.4.142, vite-plugin-prerender 1.0.8
+- **Devtools** : vite-plugin-vue-devtools 8.0.6
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 📦 Composants du Projet
 
-## Customize configuration
+### Architecture Portfolio Agence
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Page d'Accueil** : Présentation de l'agence avec mise en avant des points forts
+- **Catalogue de Services** : Description détaillée des services proposés
+- **Portfolio de Projets** : Cas d'usage et projets réalisés
+- **Équipe** : Présentation des membres de l'agence
+- **Formulaire de Contact** : CTA pour conversion clients
+- **Animations Dynamiques** : AOS pour scroll-triggered animations
+- **SEO Optimisé** : Prerendering et SSR pour meilleur classement
 
-## Project Setup
+## 🚀 Fonctionnalités Principales
 
-```sh
+✅ Design professionnel et moderne  
+✅ Animations fluides avec AOS  
+✅ Portfolio interactif des projets  
+✅ Formulaire de contact optimisé  
+✅ SSR pour meilleur SEO  
+✅ Prerendering pour performance  
+✅ Responsive design complet  
+✅ Navigation intuitive
+
+## 🔧 Installation & Utilisation
+
+```bash
+# Installation des dépendances
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Mode développement
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
+# Build production
 npm run build
-```
+
+# Aperçu du build
+npm run preview
+
+# Type checking
+npm run type-check
